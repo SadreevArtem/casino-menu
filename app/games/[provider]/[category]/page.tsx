@@ -21,8 +21,7 @@ export default async function ChooseGames ({ params }: {params:{[key: string]: s
     <>
       <h2>Games</h2>
       <div>
-        <h2>Categories</h2>
-        <ul>
+        <ul className="list5b">
           {Array.from(allPaths).map((elem) => (
             <li key={elem}>
               <Link href={`/games/${params?.provider}/${params?.category}/${elem}`}>{elem}</Link>

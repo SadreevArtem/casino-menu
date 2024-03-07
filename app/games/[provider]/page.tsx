@@ -19,9 +19,9 @@ export default async function Providers ({ params }: {params:{[key: string]: str
 
   return (<>
       <h2>Games</h2>
-      <div>
+      <div className="">
         <h2>Categories</h2>
-        <ul>
+        <ul className="list5b">
           {Array.from(allPaths).map((elem) => (
             <li key={elem}>
               <Link href={`/games/${params?.provider}/${elem}`}>{elem}</Link>

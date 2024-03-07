@@ -21,7 +21,7 @@ return(<>
     <h1>Games</h1>
     <div>
       <h2>Providers</h2>
-      <ul>
+      <ul className="list5b">
         {Array.from(allPaths).map(elem=> <li key={elem}><Link href={`/games/${elem}`}>{elem}</Link></li>)}
       </ul>
     </div>
